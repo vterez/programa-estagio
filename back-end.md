@@ -12,25 +12,17 @@ Esses requisitos são obrigatórios e devem ser desenvolvidos para a entrega do 
 
 ### CRUD
 
-Implementar as operações de criação (POST), consulta (GET), atualização (PUT) e exclusão (DELETE) de todas as entidades a seguir.
+Implementar as operações de **criação (POST)**, **consulta (GET)** (Por Id e GetAll), **atualização (PUT)** e **exclusão (DELETE)** de todas as entidades do seguinte diagrama:
 
-#### Linhas
+!['D](imagens/backend_diagrama.png)
 
-* **cl** [int]: Código único identificador da linha.
+### Métodos
 
-* **lc** [bool]:  Indica se uma linha opera no modo circular (sem um terminal secundário).
+Após implementar o CRUD para as entidades, implemente os seguintes métodos:
 
-* **lt** [string]: A primeira parte do letreiro numérico da linha.
+* `Linhas por Parada`: Recebe o identificador de uma parada e retorna as linhas associadas a parada informada
 
-* **tl** [int]:  A segunda parte do letreiro numérico da linha, que indica se a linha opera nos modos:
-  * BASE (10)
-  * ATENDIMENTO (21, 23, 32, 41).
-
-* **sl** [int]: O sentido ao qual a linha atende, onde 1 significa Terminal Principal para Terminal Secundário e 2 para Terminal Secundário para Terminal Principal.
-
-* **tp** [string]: O letreiro descritivo da linha no sentido Terminal Principal para Terminal Secundário.
-
-* **ts** [string]: O letreiro descritivo da linha no sentido Terminal Secundário para Terminal Principal
+* `Veiculos por Linha`: Recebe o identificador de uma linha e retorna os veículos associados a linha informada
 
 ## O que é permitido
 
@@ -65,6 +57,8 @@ Implementar as operações de criação (POST), consulta (GET), atualização (P
 ## Extras
 
 Aqui são listados algumas sugestões para você que quer ir além do desafio inicial. Lembrando que você não precisa se limitar a essas sugestões, se tiver pensado em outra funcionalidade que considera relevante ao escopo da aplicação fique à vontade para implementá-la.
+
+* `Paradas por Posição`: Implementar um método que recebe uma posição (lat, long) como parâmetro e retorna as paradas mais proximas a posição informada.
 
 * **DDD**: Implementar a aplicação baseada nos princípios do Domain-driven design (DDD)
 
