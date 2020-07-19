@@ -1,3 +1,6 @@
+# Link do vídeo
+https://youtu.be/p_g3tPvoi5E
+
 # Programa de estágio - 2020-1
 
 ![Aiko](imagens/aiko.png)
